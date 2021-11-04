@@ -1,7 +1,7 @@
 # ignore folders
 /node_modules
 /dist
-.cache
+/.cache
 
 # ignore files
 *.lock
