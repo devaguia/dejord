@@ -1,19 +1,25 @@
 .container .btn{
     display: flex;
-    width: 100px;
-    height: 40px;
     border: none;
     border-radius: 3px;
+
     align-content: center;
     justify-content: center;
     cursor: pointer;
+
     text-align: center;
     text-decoration: none;
-    margin: 15px 0 0 0;
+    
 
     &-primary {
         background-color: $submit;
         color: #fff;
+
+        &-login {
+            width: 100px;
+            height: 40px;
+            margin: 15px 0 0 0;
+        }
     }
 
     &:hover {

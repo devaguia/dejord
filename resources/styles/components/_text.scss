@@ -1,30 +1,35 @@
 .container {
     .input-section {
-        input {
+        .input-txt {
             background: #25313E;
             color: $text-color;
-            
-            padding-left: 40px;
-            border-radius: 5px;
-            border: none;
-    
-            width: 215px;
-            height: 40px;
-        }
-    }
-    .input-icon {
-        position:absolute;
-        left: 10px;
 
-        &-email {
-            width:20px;
-            bottom:62%;
-        }
-
-        &-password {
-            width:18px;
-            bottom:10%;
-        }
+            &-login {
+                padding-left: 40px;
+                border-radius: 5px;
+                border: none;
         
+                width: 215px;
+                height: 40px;
+            }
+        }
+
+        .input-icon {
+            position:absolute;
+            left: 10px;
+    
+            &-mail {
+                width:20px;
+                bottom:62%;
+            }
+    
+            &-pass {
+                width:18px;
+                bottom:10%;
+            }
+            
+        }
+
     }
+    
 }

@@ -1,35 +1,39 @@
 .box {
-    position:relative;
+    position: relative;
     display: flex;
     background-color: $primary;
-    top:20%;
+    top: 20%;
     margin-left:auto;
     margin-right: auto;
-    width: 350px;
-    height: 400px;
 
-    input[type=submit] {
-        position: absolute;
-        top: 260px;
-        left: 120px;
-    }
+    &-login {
+        width: 350px;
+        height: 400px;
 
-    .logo-div {
-        svg {
+        input[type=submit] {
             position: absolute;
-            width: 180px;
-            top: 50px;
-            left: 75px;
+            top: 260px;
+            left: 120px;
+        }
+    
+        .logo-div {
+            svg {
+                position: absolute;
+                width: 180px;
+                top: 50px;
+                left: 75px;
+            }
+        }
+    
+        .input-section {
+            position: absolute;
+            top: 150px;
+            left: 45px;
+    
+            input {
+                margin-top: 10px;
+            }
         }
     }
 
-    .input-section {
-        position: absolute;
-        top: 150px;
-        left: 45px;
-
-        input {
-            margin-top: 10px;
-        }
-    }
 }
