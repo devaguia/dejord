@@ -1,0 +1,25 @@
+header {
+    width: 100%;
+    .header {
+        display: inline;
+        padding: 0px 0 0 0px;
+        height: 50px;
+        background-color: $primary;
+
+        span {
+            position: absolute;
+        }
+        &-left {
+            position: relative;
+            span {
+                float: left;
+            }
+        }
+
+        &-right {
+            span {
+                left: 100%
+            }
+        }
+    }
+}
