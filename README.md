@@ -22,28 +22,37 @@ npm install
 ├── login.html
 ├── package.json
 ├── README.md
-├── resources/
-│   ├── images/
-│   │   ├── icons/
+├── resources
+│   ├── images
+│   │   ├── 147144.png
+│   │   ├── icons
+│   │   │   ├── download.svg
+│   │   │   ├── edit.svg
 │   │   │   ├── email-icon.svg
-│   │   │   └── password-icon.svg
+│   │   │   ├── password-icon.svg
+│   │   │   └── search.svg
 │   │   └── logo.svg
 │   ├── index.js
-│   ├── scripts/
+│   ├── scripts
 │   │   └── index.js
-│   └── styles/
-│       ├── base/
+│   └── styles
+│       ├── base
 │       │   ├── index.scss
 │       │   └── _vars.scss
-│       ├── components/
+│       ├── components
 │       │   ├── _box.scss
 │       │   ├── _button.scss
 │       │   ├── _container.scss
+│       │   ├── _header.scss
 │       │   ├── _icon.scss
-│       │   ├── index.scss/
+│       │   ├── index.scss
 │       │   ├── _normalize.scss
 │       │   ├── _table.scss
 │       │   └── _text.scss
-│       └── index.scss
+│       ├── index.scss
+│       └── pages
+│           ├── index.scss
+│           └── interns.scss
 └── yarn.lock
+
 ```
