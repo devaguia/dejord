@@ -1,0 +1,33 @@
+.container {
+    .container-intern {
+        padding: 20px 0px;
+
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1150px;
+        margin: 0 auto;
+
+        .input-div {
+            flex: 1 1 600px;
+
+            input[type="button"] {
+                float: right;
+            }
+        }
+
+        .search-section {
+            i {
+                color:  $text-color;
+                position: relative;
+                top: 28px;
+                right: 5px;
+                font-size: 12px;
+            }
+        }
+
+        .table-section {
+            padding-top: 20px;
+        }
+        
+    }
+}

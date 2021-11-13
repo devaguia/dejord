@@ -1,24 +1,25 @@
-header {
-    width: 100%;
-    .header {
-        display: inline;
-        padding: 0px 0 0 0px;
-        height: 50px;
-        background-color: $primary;
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 55px;
+    align-items: center;
 
-        span {
-            position: absolute;
-        }
-        &-left {
-            position: relative;
-            span {
-                float: left;
-            }
+    color: $text-color;
+    background-color: $primary;
+
+    .header-user {
+        display: flex;
+        align-items: center;
+
+        .user-name {
+            margin-right: 20px;
         }
 
-        &-right {
-            span {
-                left: 100%
+        .user-img {
+            img {
+                position: relative;
+                max-width: 40px;
             }
         }
     }
