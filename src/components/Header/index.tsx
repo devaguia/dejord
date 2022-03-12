@@ -1,22 +1,21 @@
 import React from 'react';
 
-import { Head, UserIcon } from './styles';
+import { Container, Page, User, UserIcon } from './styles';
 
 const Header: React.FC = () => {
     return (
-        <Head>
-            <div className="header-title">
+        <Container>
+            <Page>
                 <span>Internos</span>
-            </div>
-            <div className="header-user">
-                <div className="user-name">
+            </Page>
+            <User className="header-user">
+                <div>
                     <span>Marcos</span>
                 </div>
-                <div className="user-img">
-                    <UserIcon src="./resources/images/147144.png" alt="" />
-                </div>
-            </div>
-        </Head>
+                <UserIcon>
+                </UserIcon>
+            </User >
+        </Container>
     );
 };
 

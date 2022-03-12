@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { FaEnvelope, FaKey } from "react-icons/fa";
 
 export const Container = styled.div`
   display: flex;
@@ -10,7 +11,9 @@ export const Container = styled.div`
   background-color: var(--primary-dark);
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+  width: 100px;
+`;
 
 export const Box = styled.div`
   position: absolute;
@@ -28,26 +31,24 @@ export const Box = styled.div`
 export const Form = styled.form`
   .btn-primary {
     position: relative;
-    top: 45px;
-    border-radius: 5px;
+    top: 20px;
     width: 90px;
-    height: 40px;
-
-    color: var(--text-color);
-    background-color: var(--submit-ligth);
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 `;
 
 export const SectionInput = styled.div`
-  padding-top: 120px;
+  padding-top: 140px;
 
   > div {
     position: relative;
     padding-left: 40px;
+    margin-bottom: 15px;
+
+    > svg {
+      position: absolute;
+      left: 50px;
+      top: 10px;
+    }
 
     > input {
       display: flex;
@@ -63,6 +64,17 @@ export const SectionInput = styled.div`
   }
 `;
 
-export const UserIcon = styled.img``;
+const iconsCSS = css`
+  width: 16px;
+  height: 16px;
+  fill: var(--text-color);
+  flex-shrink: 0;
+`;
 
-export const PasswordIcon = styled.img``;
+export const UserIcon = styled(FaEnvelope)`
+  ${iconsCSS}
+`;
+
+export const PasswordIcon = styled(FaKey)`
+  ${iconsCSS}
+`;

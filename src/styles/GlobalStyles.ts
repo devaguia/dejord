@@ -6,19 +6,23 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+    
     html {
         min-height: 100%;
         background: var(--primary);
     }
+
     *, button, input {
         border: 0;
         background: none;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji" ;
         color: var(--black);
     }
+
     ul {
         list-style: none;
     }
+
     :root {
         --primary: #2C3E50;
         --primary-dark: #25313E;
@@ -28,5 +32,7 @@ export default createGlobalStyle`
         --submit-ligth: #328ce7;
         --submit-dark: #1359a0;
         --text-color: #fff;
+
+        --input-height: 40px
     }
 `;

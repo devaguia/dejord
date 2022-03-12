@@ -1,26 +1,42 @@
 import styled from "styled-components";
 
-export const Head = styled.header`
+export const Container = styled.header`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 15px 55px;
+  padding: 30px 55px;
   align-items: center;
 
-  color: $text-color;
-  background-color: $primary;
+  color: var(--text-color);
+  font-weight: 600;
+  background-color: var(--primary);
+`;
 
-  .header-user {
+export const Page = styled.div``;
+
+export const User = styled.div`
+  :nth-child(2) {
     display: flex;
     align-items: center;
 
-    .user-name {
-      margin-right: 20px;
+    span {
+      margin-right: 25px;
     }
   }
 `;
 
-export const UserIcon = styled.img`
-  position: relative;
-  max-width: 40px;
+export const UserIcon = styled.div`
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  max-width: 60px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  background-color: var(--primary-dark);
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
