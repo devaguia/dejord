@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../components/Button';
+import { Link } from 'react-router-dom';
 
 import { Container, Logo, Form, SectionInput, UserIcon, PasswordIcon, Box } from './styles';
 
@@ -22,7 +23,9 @@ const Login: React.FC = () => {
                         </div>
                     </SectionInput>
                     <div>
-                        <Button className='btn-primary' type='submit' value='Entrar' />
+                        <Link to={`/`}>
+                            <Button className='btn-primary' type='submit' value='Entrar' />
+                        </Link>
                     </div>
                 </Form>
             </Box>

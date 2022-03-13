@@ -7,9 +7,9 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
     
-    html {
+    html, body {
         min-height: 100%;
-        background: var(--primary);
+        height: 100%;
     }
 
     *, button, input {
