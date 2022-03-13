@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 import Header from '../../components/Header';
 import InternList from '../../components/InternList';
@@ -8,7 +9,7 @@ import { Container, Search, SearchIcon, List } from './styles';
 const Home: React.FC = () => {
     return (
         <Container>
-            <Header />
+            <Header title='Internos'/>
 
             <Search>
                 <div className="search-section">
@@ -16,7 +17,9 @@ const Home: React.FC = () => {
                     <input type="text" id="search-input" placeholder="Digite para filtrar" />
                 </div>
                 <div className="action-section">
-                    <Button type="button" value="Cadastrar Interno" />
+                    <Link to={`/cadastro`}>
+                        <Button type="button" value="Cadastrar Interno"/>
+                    </Link>
                 </div>
             </Search>
 

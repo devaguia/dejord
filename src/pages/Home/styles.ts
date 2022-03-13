@@ -30,14 +30,13 @@ export const Search = styled.div`
     }
   }
   .action-section {
-    max-width: 130px;
     margin-left: 10px;
-
-    > input {
+    input {
       font-weight: 600;
       position: relative;
       float: right;
-      width: 130px;
+      min-width: 130px;
+      width: 130px !important;
     }
   }
 `;

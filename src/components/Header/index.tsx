@@ -2,11 +2,15 @@ import React from 'react';
 
 import { Container, Page, User, UserIcon } from './styles';
 
-const Header: React.FC = () => {
+interface Props {
+    title: string
+}
+
+const Header: React.FC <Props> = ({title}) => {
     return (
         <Container>
             <Page>
-                <span>Internos</span>
+                <span>{title}</span>
             </Page>
             <User className="header-user">
                 <div>
