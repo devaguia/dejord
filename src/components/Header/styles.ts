@@ -20,14 +20,14 @@ export const User = styled.div`
     align-items: center;
 
     span {
-      margin-right: 25px;
+      margin-right: 35px;
     }
   }
 `;
 
 export const UserIcon = styled.div`
   position: absolute;
-  right: 20px;
+  right: 35px;
   top: 15px;
   max-width: 60px;
   width: 45px;
