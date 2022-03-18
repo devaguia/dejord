@@ -48,6 +48,13 @@ export const Address = styled.div`
   }
 
   .address-country-data {
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+
+    grid-column: 2;
+    > div {
+      :nth-child(2) {
+        width: 50%;
+      }
+    }
   }
 `;

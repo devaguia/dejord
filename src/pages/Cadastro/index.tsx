@@ -1,18 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import { Container, Box } from './styles';
-import Header from '../../components/Header';
-import PersonalData from '../../components/PersonalData';
+import { Container, Box, Content } from "./styles";
+
+import Header from "../../components/Header";
+import PersonalData from "../../components/PersonalData";
+import AnswerableData from "../../components/AnswerableData";
 
 const Cadastro: React.FC = () => {
-    return (
-        <Container>
-            <Header title="Cadastro"/>
-            <Box>
-                <PersonalData />
-            </Box>
-        </Container>
-    );
+  return (
+    <Container>
+      <Header title="Cadastro" />
+      <Box>
+        <Content>
+          <PersonalData />
+        </Content>
+      </Box>
+      <Box>
+        <Content>
+          <AnswerableData />
+        </Content>
+      </Box>
+    </Container>
+  );
 };
 
 export default Cadastro;

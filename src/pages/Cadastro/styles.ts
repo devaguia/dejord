@@ -38,3 +38,8 @@ export const Box = styled.div`
     margin-bottom: 20px;
   }
 `;
+
+export const Content = styled.div`
+  width: 95%;
+  margin: auto;
+`;

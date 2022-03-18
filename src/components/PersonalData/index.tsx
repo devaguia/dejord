@@ -1,165 +1,241 @@
-import React from 'react';
-import Button from '../Button';
-import PageControllers from '../PageControllers';
+import React from "react";
+import PageControllers from "../PageControllers";
 
-import { Container, Personal, Documents, Address } from './styles';
+import { Container, Personal, Documents, Address } from "./styles";
 
 const PersonalData: React.FC = () => {
-    return (
-        <Container>
-            <Personal className='section'>
-                <div className='section-title'>
-                    <h2>Informações Pessoais</h2>
-                </div>
-                <div className='personal-intern-data sub-section'>
-                    <div className='input'>
-                        <label htmlFor="input-name">Nome</label>
-                        <div>
-                            <input type="text" name="input-name" id="input-name"/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="input-nickname">Apelido</label>
-                        <div>
-                            <input type="text" name="input-nickname" id="input-nickname"/>
-                        </div>
-                    </div>
-                </div>
-                <div className='personal-parent-data sub-section'>
-                    <div className='input'>
-                        <label htmlFor="input-father-name">Pai</label>
-                        <div>
-                            <input type="text" name="input-father-name" id="input-father-name"/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="input-mother-name">Mãe</label>
-                        <div>
-                            <input type="text" name="input-mother-name" id="input-mother-name"/>
-                        </div>
-                    </div>
-                </div>
-                <div className='personal-aditional-data sub-section'>
-                    <div className='input'>
-                        <label htmlFor="input-ocuppation">Profissão</label>
-                        <div>
-                            <input type="text" name="input-ocuppation" id="input-ocuppation"/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="input-cellphone">Celular</label>
-                        <div>
-                            <input type="text" name="input-cellphone" id="input-cellphone"/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="input-phone">Telefone</label>
-                        <div>
-                            <input type="text" name="input-phone" id="input-phone"/>
-                        </div>
-                    </div>
-                </div>
-                <div className='personal-entry-data sub-section'>
-                    <div className='input'>
-                        <label htmlFor="input-entry">Data de entrada</label>
-                        <div>
-                            <input type="text" name="input-entry" id="input-entry"/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="input-departure-date">Data de saída</label>
-                        <div>
-                            <input type="text" name="input-departure-date" id="input-departure-date"/>
-                        </div>
-                    </div>
-                </div>
-            </Personal>
-            <Documents className='section'>
-                <div className='section-title'>
-                    <h2>Documentos</h2>
-                </div>
-                <div className='ducuments-data sub-section'>
-                    <div className='input'>
-                        <label htmlFor="">RG</label>
-                        <div>
-                            <input type="text" name="" id=""/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="">CPF</label>
-                        <div>
-                            <input type="text" name="" id=""/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="">Carteira Profissional</label>
-                        <div>
-                            <input type="text" name="" id=""/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="">CNH</label>
-                        <div>
-                            <input type="text" name="" id=""/>
-                        </div>
-                    </div>
-                </div>
-                
-            </Documents>
-            <Address className='section'>
-                <div className='section-title'>
-                    <h2>Endereço</h2>
-                </div>
-                <div className='address-city-data sub-section'>
-                    <div className='input'>
-                        <label htmlFor="input-address">Rua</label>
-                        <div>
-                            <input type="text" name="input-address" id="input-address"/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="input-address-number">Número</label>
-                        <div>
-                            <input type="text" name="input-address-number" id=""/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="input-address-neighborhood">Bairro</label>
-                        <div>
-                            <input type="text" name="input-address-neighborhood" id="input-address-neighborhood"/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="input-address-city">Cidade</label>
-                        <div>
-                            <input type="text" name="input-address-city" id="input-address-city"/>
-                        </div>
-                    </div>
-                </div>
-                <div className='address-country-data sub-section'>
-                    <div className='input'>
-                        <label htmlFor="input-address-state">Estado</label>
-                        <div>
-                            <input type="text" name="input-address-state" id="input-address-state"/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="input-address-uf">UF</label>
-                        <div>
-                            <input type="text" name="input-address-uf" id="input-address-uf"/>
-                        </div>
-                    </div>
-                    <div className='input'>
-                        <label htmlFor="input-address-naturality">Naturalidade</label>
-                        <div>
-                            <input type="text" name="input-address-naturality" id="input-address-naturality"/>
-                        </div>
-                    </div>
-                </div>
-            </Address>
-            <PageControllers page={1} />
-        </Container>
-    );
+  const classPrefix = "input-inter-";
+
+  return (
+    <Container>
+      <Personal className="section">
+        <div className="section-title">
+          <h2>Informações Pessoais</h2>
+        </div>
+        <div className="personal-intern-data sub-section">
+          <div className="input">
+            <label htmlFor={classPrefix + "name"}>Nome</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "name"}
+                id={classPrefix + "name"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "nickname"}>Apelido</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "nickname"}
+                id={classPrefix + "nickname"}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="personal-parent-data sub-section">
+          <div className="input">
+            <label htmlFor={classPrefix + "father-name"}>Pai</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "father-name"}
+                id={classPrefix + "father-name"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "mother-name"}>Mãe</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "mother-name"}
+                id={classPrefix + "mother-name"}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="personal-aditional-data sub-section">
+          <div className="input">
+            <label htmlFor={classPrefix + "ocuppation"}>Profissão</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "ocuppation"}
+                id={classPrefix + "ocuppation"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "cellphone"}>Celular</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "cellphone"}
+                id={classPrefix + "cellphone"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "phone"}>Telefone</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "phone"}
+                id={classPrefix + "phone"}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="personal-entry-data sub-section">
+          <div className="input">
+            <label htmlFor={classPrefix + "entry"}>Data de entrada</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "entry"}
+                id={classPrefix + "entry"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "departure-date"}>
+              Data de saída
+            </label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "departure-date"}
+                id={classPrefix + "departure-date"}
+              />
+            </div>
+          </div>
+        </div>
+      </Personal>
+      <Documents className="section">
+        <div className="section-title">
+          <h2>Documentos</h2>
+        </div>
+        <div className="ducuments-data sub-section">
+          <div className="input">
+            <label htmlFor={classPrefix + "documents-rg"}>RG</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "documents-rg"}
+                id={classPrefix + "documents-rg"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "documents-cpf"}>CPF</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "documents-cpf"}
+                id={classPrefix + "documents-cpf"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "documents-ctps"}>
+              Carteira Profissional
+            </label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "documents-ctps"}
+                id={classPrefix + "documents-ctps"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "documents-cnh"}>CNH</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "documents-cnh"}
+                id={classPrefix + "documents-cnh"}
+              />
+            </div>
+          </div>
+        </div>
+      </Documents>
+      <Address className="section">
+        <div className="section-title">
+          <h2>Endereço</h2>
+        </div>
+        <div className="address-city-data sub-section">
+          <div className="input">
+            <label htmlFor={classPrefix + "address"}>Rua</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "address"}
+                id={classPrefix + "address"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "address-number"}>Número</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "address-number"}
+                id={classPrefix + "address-number"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "address-neighborhood"}>Bairro</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "address-neighborhood"}
+                id={classPrefix + "address-neighborhood"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "address-city"}>Cidade</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "address-city"}
+                id={classPrefix + "address-city"}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="address-country-data sub-section">
+          <div className="input">
+            <label htmlFor={classPrefix + "address-uf"}>UF</label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "address-uf"}
+                id={classPrefix + "address-uf"}
+              />
+            </div>
+          </div>
+          <div className="input">
+            <label htmlFor={classPrefix + "address-naturality"}>
+              Naturalidade
+            </label>
+            <div>
+              <input
+                type="text"
+                name={classPrefix + "address-naturality"}
+                id={classPrefix + "address-naturality"}
+              />
+            </div>
+          </div>
+        </div>
+      </Address>
+      <PageControllers page={1} />
+    </Container>
+  );
 };
 
 export default PersonalData;
