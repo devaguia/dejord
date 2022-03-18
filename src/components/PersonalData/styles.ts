@@ -7,12 +7,12 @@ export const Container = styled.div`
     input {
       width: 100%;
     }
-
-    .sub-section {
-      display: grid;
-      grid-gap: 10px;
-    }
   }
+`;
+
+export const SubSection = styled.div`
+  display: grid;
+  grid-gap: 10px;
 `;
 
 export const Personal = styled.div`

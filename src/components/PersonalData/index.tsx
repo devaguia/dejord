@@ -1,7 +1,7 @@
 import React from "react";
 import PageControllers from "../PageControllers";
 
-import { Container, Personal, Documents, Address } from "./styles";
+import { Container, Personal, Documents, Address, SubSection } from "./styles";
 
 const PersonalData: React.FC = () => {
   const classPrefix = "input-inter-";
@@ -12,7 +12,7 @@ const PersonalData: React.FC = () => {
         <div className="section-title">
           <h2>Informações Pessoais</h2>
         </div>
-        <div className="personal-intern-data sub-section">
+        <SubSection className="personal-intern-data sub-section">
           <div className="input">
             <label htmlFor={classPrefix + "name"}>Nome</label>
             <div>
@@ -33,8 +33,8 @@ const PersonalData: React.FC = () => {
               />
             </div>
           </div>
-        </div>
-        <div className="personal-parent-data sub-section">
+        </SubSection>
+        <SubSection className="personal-parent-data sub-section">
           <div className="input">
             <label htmlFor={classPrefix + "father-name"}>Pai</label>
             <div>
@@ -55,8 +55,8 @@ const PersonalData: React.FC = () => {
               />
             </div>
           </div>
-        </div>
-        <div className="personal-aditional-data sub-section">
+        </SubSection>
+        <SubSection className="personal-aditional-data sub-section">
           <div className="input">
             <label htmlFor={classPrefix + "ocuppation"}>Profissão</label>
             <div>
@@ -87,8 +87,8 @@ const PersonalData: React.FC = () => {
               />
             </div>
           </div>
-        </div>
-        <div className="personal-entry-data sub-section">
+        </SubSection>
+        <SubSection className="personal-entry-data sub-section">
           <div className="input">
             <label htmlFor={classPrefix + "entry"}>Data de entrada</label>
             <div>
@@ -111,13 +111,13 @@ const PersonalData: React.FC = () => {
               />
             </div>
           </div>
-        </div>
+        </SubSection>
       </Personal>
       <Documents className="section">
         <div className="section-title">
           <h2>Documentos</h2>
         </div>
-        <div className="ducuments-data sub-section">
+        <SubSection className="ducuments-data sub-section">
           <div className="input">
             <label htmlFor={classPrefix + "documents-rg"}>RG</label>
             <div>
@@ -160,13 +160,13 @@ const PersonalData: React.FC = () => {
               />
             </div>
           </div>
-        </div>
+        </SubSection>
       </Documents>
       <Address className="section">
         <div className="section-title">
           <h2>Endereço</h2>
         </div>
-        <div className="address-city-data sub-section">
+        <SubSection className="address-city-data sub-section">
           <div className="input">
             <label htmlFor={classPrefix + "address"}>Rua</label>
             <div>
@@ -207,8 +207,8 @@ const PersonalData: React.FC = () => {
               />
             </div>
           </div>
-        </div>
-        <div className="address-country-data sub-section">
+        </SubSection>
+        <SubSection className="address-country-data sub-section">
           <div className="input">
             <label htmlFor={classPrefix + "address-uf"}>UF</label>
             <div>
@@ -231,7 +231,7 @@ const PersonalData: React.FC = () => {
               />
             </div>
           </div>
-        </div>
+        </SubSection>
       </Address>
       <PageControllers page={1} />
     </Container>
