@@ -5,12 +5,13 @@ import { Container, Box, Content } from "./styles";
 import Header from "../../components/Header";
 import PersonalData from "../../components/PersonalData";
 import AnswerableData from "../../components/AnswerableData";
+import FamilyIncome from "../../components/FamilyIncome";
 
 const Cadastro: React.FC = () => {
   return (
     <Container>
       <Header title="Cadastro" />
-      <Box>
+      {/* <Box>
         <Content>
           <PersonalData />
         </Content>
@@ -18,6 +19,11 @@ const Cadastro: React.FC = () => {
       <Box>
         <Content>
           <AnswerableData />
+        </Content>
+      </Box> */}
+      <Box>
+        <Content>
+          <FamilyIncome />
         </Content>
       </Box>
     </Container>

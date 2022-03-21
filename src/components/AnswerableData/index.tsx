@@ -4,7 +4,7 @@ import PageControllers from "../PageControllers";
 import { Container, Personal, Address, SubSection } from "./styles";
 
 const AnswerableData: React.FC = () => {
-  const classPrefix = "input-answer-";
+  const componentPrefix = "input-answer-";
   return (
     <Container>
       <Personal className="section">
@@ -13,58 +13,58 @@ const AnswerableData: React.FC = () => {
         </div>
         <SubSection className="personal-intern-data sub-section">
           <div className="input">
-            <label htmlFor={classPrefix + "name"}>Nome</label>
+            <label htmlFor={componentPrefix + "name"}>Nome</label>
             <div>
               <input
                 type="text"
-                name={classPrefix + "name"}
-                id={classPrefix + "name"}
+                name={componentPrefix + "name"}
+                id={componentPrefix + "name"}
               />
             </div>
           </div>
         </SubSection>
         <SubSection className="phone-sub-section sub-section">
           <div className="input">
-            <label htmlFor={classPrefix + "residencial-phone"}>
+            <label htmlFor={componentPrefix + "residencial-phone"}>
               Telefone residencial
             </label>
             <div>
               <input
                 type="text"
-                name={classPrefix + "residencial-phone"}
-                id={classPrefix + "residencial-phone"}
+                name={componentPrefix + "residencial-phone"}
+                id={componentPrefix + "residencial-phone"}
               />
             </div>
           </div>
           <div className="input">
-            <label htmlFor={classPrefix + "cellphone"}>Celular</label>
+            <label htmlFor={componentPrefix + "cellphone"}>Celular</label>
             <div>
               <input
                 type="text"
-                name={classPrefix + "cellphone"}
-                id={classPrefix + "cellphone"}
+                name={componentPrefix + "cellphone"}
+                id={componentPrefix + "cellphone"}
               />
             </div>
           </div>
           <div className="input">
-            <label htmlFor={classPrefix + "message-phone"}>
+            <label htmlFor={componentPrefix + "message-phone"}>
               Telefone pra recado
             </label>
             <div>
               <input
                 type="text"
-                name={classPrefix + "message-phone"}
-                id={classPrefix + "message-phone"}
+                name={componentPrefix + "message-phone"}
+                id={componentPrefix + "message-phone"}
               />
             </div>
           </div>
           <div className="input">
-            <label htmlFor={classPrefix + "talk-to"}>Falar com</label>
+            <label htmlFor={componentPrefix + "talk-to"}>Falar com</label>
             <div>
               <input
                 type="text"
-                name={classPrefix + "talk-to"}
-                id={classPrefix + "talk-to"}
+                name={componentPrefix + "talk-to"}
+                id={componentPrefix + "talk-to"}
               />
             </div>
           </div>
@@ -77,50 +77,52 @@ const AnswerableData: React.FC = () => {
         </div>
         <SubSection className="address-first-line sub-section">
           <div className="input">
-            <label htmlFor={classPrefix + "address"}>Rua</label>
+            <label htmlFor={componentPrefix + "address"}>Rua</label>
             <div>
               <input
                 type="text"
-                name={classPrefix + "address"}
-                id={classPrefix + "address"}
+                name={componentPrefix + "address"}
+                id={componentPrefix + "address"}
               />
             </div>
           </div>
           <div className="input">
-            <label htmlFor={classPrefix + "address-number"}>Número</label>
+            <label htmlFor={componentPrefix + "address-number"}>Número</label>
             <div>
-              <input type="text" name={classPrefix + "address-number"} />
+              <input type="text" name={componentPrefix + "address-number"} />
             </div>
           </div>
           <div className="input">
-            <label htmlFor={classPrefix + "address-neighborhood"}>Bairro</label>
+            <label htmlFor={componentPrefix + "address-neighborhood"}>
+              Bairro
+            </label>
             <div>
               <input
                 type="text"
-                name={classPrefix + "address-neighborhood"}
-                id={classPrefix + "address-neighborhood"}
+                name={componentPrefix + "address-neighborhood"}
+                id={componentPrefix + "address-neighborhood"}
               />
             </div>
           </div>
         </SubSection>
         <SubSection className="address-second-line sub-section">
           <div className="input">
-            <label htmlFor={classPrefix + "address-city"}>Cidade</label>
+            <label htmlFor={componentPrefix + "address-city"}>Cidade</label>
             <div>
               <input
                 type="text"
-                name={classPrefix + "address-city"}
-                id={classPrefix + "address-city"}
+                name={componentPrefix + "address-city"}
+                id={componentPrefix + "address-city"}
               />
             </div>
           </div>
           <div className="input">
-            <label htmlFor={classPrefix + "address-uf"}>UF</label>
+            <label htmlFor={componentPrefix + "address-uf"}>UF</label>
             <div>
               <input
                 type="text"
-                name={classPrefix + "address-uf"}
-                id={classPrefix + "address-uf"}
+                name={componentPrefix + "address-uf"}
+                id={componentPrefix + "address-uf"}
               />
             </div>
           </div>
