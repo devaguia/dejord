@@ -11,7 +11,7 @@ const Cadastro: React.FC = () => {
   return (
     <Container>
       <Header title="Cadastro" />
-      {/* <Box>
+      <Box>
         <Content>
           <PersonalData />
         </Content>
@@ -20,7 +20,7 @@ const Cadastro: React.FC = () => {
         <Content>
           <AnswerableData />
         </Content>
-      </Box> */}
+      </Box>
       <Box>
         <Content>
           <FamilyIncome />
