@@ -33,6 +33,15 @@ const InternalSchema = new mongoose.Schema({
             require: true,
         },
     },
+    updateList: [{
+        _id : false,
+        date: {
+            type: Date
+        },
+        message: {
+            type: String
+        }
+    }],
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
@@ -45,5 +54,4 @@ const InternalSchema = new mongoose.Schema({
 })
 
 const Internal = mongoose.model('Internal', InternalSchema)
-
 module.exports = Internal
