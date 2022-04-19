@@ -35,7 +35,7 @@ router.post('/', async(req, res) => {
     try{
         const internal = await Internal.create({ ...req.body, user: req.userId })
 
-        return res.send({ internal })
+        return res.status(201).send({ internal })
     } catch (err) {
         return res.status(400).send({ error: "Error creating internal" })
     }
@@ -44,11 +44,20 @@ router.post('/', async(req, res) => {
 // UPDATE INTERNAL
 router.put('/:internalId', async (req, res ) => {
     try{
-        const internal = await Internal.findByIdAndUpdate(req.params.internalId, {
-             ...req.body}, { new: true })
+        var internal = await Internal.findByIdAndUpdate(req.params.internalId, {...req.body}, { new: true })
+
+        if(req.body.update != null){
+            const obj = {
+                date: Date.now().toString(),
+                message: req.body.update
+            }
+            internal.updateList.push(obj)
+            await internal.save()
+        }
 
         return res.send({ internal })
     } catch (err) {
+        console.log(err)
         return res.status(400).send({ error: "Error updating internal" })
     }
 })
