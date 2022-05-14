@@ -2,11 +2,11 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const ResidenceData: React.FC = () => {
+const Endereco: React.FC = () => {
     return (
         <Container>
         </Container>
     );
 };
 
-export default ResidenceData;
+export default Endereco;

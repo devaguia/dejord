@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
@@ -6,27 +6,8 @@ import InternList from "../../components/InternList";
 
 import { Container, Search, SearchIcon, List } from "./styles";
 
-interface Data {
-  user?: object;
-  repos?: object[];
-  error?: string;
-}
 
 const Home: React.FC = () => {
-  const [auth, setAuth] = useState();
-  useEffect(() => {
-    Promise.all([
-      fetch(`http://25d8-143-255-255-203.ngrok.io/internals`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: `{ "email": "carlos@gmail.com", "password": "dejord1010"}`,
-      }),
-    ]).then(async (response) => {
-      console.log(response);
-    });
-  });
 
   return (
     <Container>

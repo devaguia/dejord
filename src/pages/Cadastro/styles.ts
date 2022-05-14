@@ -4,7 +4,7 @@ export const Container = styled.div`
   background: var(--primary-dark);
 `;
 
-export const Box = styled.div`
+export const Body = styled.div`
   position: relative;
   display: flex;
   top: 20px;
@@ -37,9 +37,4 @@ export const Box = styled.div`
   .section-title {
     margin-bottom: 20px;
   }
-`;
-
-export const Content = styled.div`
-  width: 95%;
-  margin: auto;
 `;
