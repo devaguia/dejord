@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     margin-top: 20px;
+    .title span {
+        font-weight: bold;
+    }
+    
     @media (min-width: 1080px) {
         .fields {
             display: grid;

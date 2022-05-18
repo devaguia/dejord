@@ -7,8 +7,8 @@ const Documentos: React.FC = () => {
 
   return ( 
       <Container>
-        <div className="title">
-            <h2>Documentos</h2>
+          <div className="title">
+            <span>Documentos</span>
           </div>
           <div className="fields">
             <div className="field field-lg field-lg-l">
@@ -21,7 +21,7 @@ const Documentos: React.FC = () => {
               <input type="text" placeholder="Carteira Profissional" id={_prefix + "professional-id"}  name={_prefix + "professional-id"} />
             </div>
             <div className="field field-lg field-lg-r">
-              <input type="text" placeholder="Nome" id={_prefix + "cnh"}  name={_prefix + "cnh"} />
+              <input type="text" placeholder="Carteira de Motorista" id={_prefix + "cnh"}  name={_prefix + "cnh"} />
             </div>
         </div>
       </Container>

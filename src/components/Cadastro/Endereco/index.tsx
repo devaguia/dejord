@@ -1,27 +1,41 @@
 import React from 'react';
 
 import { Container } from './styles';
+interface Props {
+  title?: string
+}
 
-const Endereco: React.FC = () => {
+const Endereco: React.FC<Props> = ({title}) => {
     const _prefix = "documentos-";
     
     return ( 
         <Container>
-          <div className="title">
-              <h2>Endereço</h2>
-            </div>
+          {title && (
+              <div className="title">
+                <span>{title}</span>
+              </div>
+            )}  
             <div className="fields">
               <div className="field field-lg field-lg-l">
-                <input type="text" placeholder="Cédula de identidade" id={_prefix + "identity"}  name={_prefix + "identity"} />
+                <input type="text" placeholder="Rua" id={_prefix + "street"}  name={_prefix + "street"} />
               </div>
-              <div className="field field-lg field-lg-r">
-                <input type="text" placeholder="CPF" id={_prefix + "cpf"}  name={_prefix + "cpf"} />
+              <div className="field">
+                <input type="text" placeholder="Número" id={_prefix + "number"}  name={_prefix + "number"} />
+              </div>
+              <div className="field">
+                <input type="text" placeholder="Bairro" id={_prefix + "neighborhod"}  name={_prefix + "neighborhod"} />
               </div>
               <div className="field field-lg field-lg-l">
-                <input type="text" placeholder="Carteira Profissional" id={_prefix + "professional-id"}  name={_prefix + "professional-id"} />
+                <input type="text" placeholder="Cidade" id={_prefix + "city"}  name={_prefix + "city"} />
               </div>
               <div className="field field-lg field-lg-r">
-                <input type="text" placeholder="Nome" id={_prefix + "cnh"}  name={_prefix + "cnh"} />
+                <input type="text" placeholder="Estado" id={_prefix + "state"}  name={_prefix + "state"} />
+              </div>
+              <div className="field">
+                <input type="text" placeholder="País" id={_prefix + "country"}  name={_prefix + "country"} />
+              </div>
+              <div className="field">
+                <input type="text" placeholder="Nacionalidade" id={_prefix + "nationality"}  name={_prefix + "nationality"} />
               </div>
           </div>
         </Container>

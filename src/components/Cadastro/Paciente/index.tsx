@@ -13,8 +13,11 @@ const Paciente: React.FC = () => {
 
   return (
     <Container>
+      <div>
+        <h2>Dados do Paciente</h2>
+      </div>
       <DadosPessoais/>
-      <Endereco />
+      <Endereco title="Endereço"/>
       <Documentos />
       <Caracteristicas/>
       <Dependencias/>

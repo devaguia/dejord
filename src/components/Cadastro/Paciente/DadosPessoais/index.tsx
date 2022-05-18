@@ -7,7 +7,7 @@ const DadosPessoais: React.FC = () => {
   return (
     <Container>
       <div className="title">
-        <h2>Dados Pessoais</h2>
+        <span>Dados Pessoais</span>
       </div>
       <div className="fields">
         <div className="field field-lg field-lg-l">
