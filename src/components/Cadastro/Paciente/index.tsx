@@ -1,6 +1,9 @@
 import React from "react";
+import Endereco from "../Endereco";
 import Caracteristicas from "./Caracteristicas";
+import DadosPessoais from "./DadosPessoais";
 import Dependencias from "./Dependencias";
+import Documentos from "./Documentos";
 import Saude from "./Saude";
 
 import { Container } from "./styles";
@@ -10,6 +13,9 @@ const Paciente: React.FC = () => {
 
   return (
     <Container>
+      <DadosPessoais/>
+      <Endereco />
+      <Documentos />
       <Caracteristicas/>
       <Dependencias/>
       <Saude/>

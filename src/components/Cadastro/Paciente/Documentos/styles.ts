@@ -1,15 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
-    .title {
-        margin-bottom: 10px;
-    }
-    input {
-        width: 100%;
-    }
-
-    @media (min-width: 768px) {
+    margin-top: 20px;
+    @media (min-width: 1080px) {
         .fields {
             display: grid;
             grid-gap: 10px;
@@ -17,4 +10,3 @@ export const Container = styled.div`
         }
     }
 `;
-
