@@ -1,4 +1,5 @@
 import React from "react";
+import Contato from "../Contato";
 import Endereco from "../Endereco";
 
 import { Container } from "./styles";
@@ -19,6 +20,7 @@ const Responsavel: React.FC = () => {
         </div>
       </div>
       <Endereco title="Endereço"/>
+      <Contato title="Contato" />
     </Container>
   );
 };

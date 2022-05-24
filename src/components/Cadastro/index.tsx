@@ -1,7 +1,7 @@
 import React from "react";
+import Dependentes from "./Dependentes";
 import Domicilio from "./Domicilio";
-import Endereco from "./Endereco";
-import Juridico from "./Juridico";
+import GrupoFamiliar from "./GrupoFamiliar";
 import Paciente from "./Paciente";
 import Renda from "./Renda";
 import Responsavel from "./Responsavel";
@@ -14,6 +14,10 @@ const Register: React.FC = () => {
     <Container>
       <Paciente/>
       <Responsavel/>
+      <Renda />
+      <Dependentes />
+      <GrupoFamiliar />
+      <Domicilio />
     </Container>
   );
 };

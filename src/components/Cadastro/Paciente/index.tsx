@@ -1,4 +1,5 @@
 import React from "react";
+import Contato from "../Contato";
 import Endereco from "../Endereco";
 import Caracteristicas from "./Caracteristicas";
 import DadosPessoais from "./DadosPessoais";
@@ -18,6 +19,7 @@ const Paciente: React.FC = () => {
       </div>
       <DadosPessoais/>
       <Endereco title="Endereço"/>
+      <Contato title="Contato" />
       <Documentos />
       <Caracteristicas/>
       <Dependencias/>
