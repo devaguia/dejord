@@ -21,12 +21,12 @@ const Dependentes: React.FC = () => {
             <input type="number" placeholder="Idade" id={_prefix + "age-dependents"}  name={_prefix + "age-dependents"} />
           </div>
           <div className="field field-lg field-lg-l">
-            <input type="text" placeholder="Responsável" id={_prefix + "answerable-dependents"}  name={_prefix + "answerable-dependents"} />
-          </div>
-          <div className="field field-lg field-lg-l">
             <input type="text" placeholder="Valor da Pensão" id={_prefix + "pension-dependents"}  name={_prefix + "pension-dependents"} />
           </div>
           <div className="field field-lg field-lg-l">
+            <input type="text" placeholder="Responsável" id={_prefix + "answerable-dependents"}  name={_prefix + "answerable-dependents"} />
+          </div>
+          <div className="field">
             <input type="button" className='btn btn-add' value="Adicionar" id={_prefix + "button-dependents"} />
           </div>
         </div>

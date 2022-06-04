@@ -13,14 +13,14 @@ const Renda: React.FC = () => {
         <div className="title">
           <span>Despesas</span>
         </div>
-        <div className="fields fields-benefits">
+        <div className="fields fields-expense">
           <div className="field field-lg field-lg-l">
             <input type="text" placeholder="Despesa" id={_prefix + "name-expense"}  name={_prefix + "name-expense"} />
           </div>
           <div className="field field-lg field-lg-r">
             <input type="text" placeholder="Valor" id={_prefix + "valor-expense"}  name={_prefix + "valor-expense"} />
           </div>
-          <div className="field field-lg field-lg-r">
+          <div className="field">
             <input type="button" className="btn btn-add" id={_prefix + "button-expense"}  value="Adicionar" name={_prefix + "button-expense"} />
           </div>
         </div>

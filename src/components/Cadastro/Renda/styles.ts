@@ -11,27 +11,7 @@ export const Container = styled.div`
         .fields-expense {
             display: grid;
             grid-gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        .fields-benefits {
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-    }
-
-    @media (min-width: 1080px) {
-        .fields-expense {
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-
-            .field-lg {
-                &-l {
-                    grid-column: 1 / 3;
-                }
-            }
+            grid-template-columns: 3fr 2fr 1fr;
         }
 
         .fields-benefits {
