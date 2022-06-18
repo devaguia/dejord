@@ -6,12 +6,10 @@ import InternList from "../../components/InternList";
 
 import { Container, Search, SearchIcon, List } from "./styles";
 
-
 const Home: React.FC = () => {
-
   return (
     <Container>
-      <Header title="Internos" />
+      <Header title="Pacientes" />
 
       <Search>
         <div className="search-section">

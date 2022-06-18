@@ -15,5 +15,14 @@ export const Container = styled.div`
             margin-left: 10px;
         }
     } 
+
+
+    @media (min-width: 768px) {
+        .fields {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 `;
 

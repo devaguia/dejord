@@ -9,11 +9,10 @@ import Responsavel from "./Responsavel";
 import { Container } from "./styles";
 
 const Register: React.FC = () => {
-  const _prefix = "cadastro-";
   return (
     <Container>
-      <Paciente/>
-      <Responsavel/>
+      <Paciente />
+      <Responsavel />
       <Renda />
       <Dependentes />
       <GrupoFamiliar />
