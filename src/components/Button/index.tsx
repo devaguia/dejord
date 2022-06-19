@@ -12,7 +12,7 @@ interface Props {
 const Button: React.FC<Props> = ({ type, value, className, children }) => {
   return (
     <Container type={type} className={className} value={value}>
-      {children ? children : ""}
+      {children}
     </Container>
   );
 };
