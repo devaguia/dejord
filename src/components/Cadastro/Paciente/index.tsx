@@ -18,6 +18,7 @@ const Paciente: React.FC = () => {
       <DadosPessoais />
       <Caracteristicas />
       <Saude />
+      <Dependencias />
       <Endereco title="Endereço" />
       <Contato title="Contato" />
       <Documentos />
