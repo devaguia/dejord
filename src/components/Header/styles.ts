@@ -36,6 +36,10 @@ export const UserIcon = styled.div`
 
   background-color: var(--primary-dark);
 
+  img {
+    width: 100%;
+  }
+
   &:hover {
     cursor: pointer;
   }

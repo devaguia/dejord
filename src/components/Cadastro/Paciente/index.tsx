@@ -10,20 +10,19 @@ import Saude from "./Saude";
 import { Container } from "./styles";
 
 const Paciente: React.FC = () => {
-  const _prefix = "pacient-";
-
   return (
     <Container>
       <div>
         <h2>Dados do Paciente</h2>
       </div>
-      <DadosPessoais/>
-      <Endereco title="Endereço"/>
+      <DadosPessoais />
+      <Caracteristicas />
+      <Saude />
+      <Dependencias />
+      <Endereco title="Endereço" />
       <Contato title="Contato" />
       <Documentos />
-      <Caracteristicas/>
-      <Dependencias/>
-      <Saude/>
+      <Dependencias />
     </Container>
   );
 };

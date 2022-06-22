@@ -11,8 +11,15 @@ export const Container = styled.div`
   background-color: var(--primary-dark);
 `;
 
-export const Logo = styled.img`
-  width: 100px;
+export const Logo = styled.div`
+  width: 150px;
+  position: relative;
+  bottom: 70px;
+  z-index: 10000;
+
+  img {
+    width: 100%;
+  }
 `;
 
 export const Box = styled.div`
