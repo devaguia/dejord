@@ -11,9 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />}></Route>
+        <Route path='/pacientes' element={<Home />}></Route>
         <Route path='/cadastro' element={<Cadastro/>}></Route>
-        <Route path='/login' element={<Login />}></Route>
+        <Route path='/' element={<Login />}></Route>
       </Routes>
       <GlobalStyles/>
     </BrowserRouter>

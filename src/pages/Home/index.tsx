@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         </div>
         <div className="action-section">
           <Link to={`/cadastro`}>
-            <Button type="button" value="Cadastrar Interno" />
+            <Button type="button" value="Novo Paciente" />
           </Link>
         </div>
       </Search>

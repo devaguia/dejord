@@ -23,7 +23,7 @@ const Login: React.FC = () => {
                         </div>
                     </SectionInput>
                     <div>
-                        <Link to={`/`}>
+                        <Link to={`/pacientes`}>
                             <Button className='btn-primary' type='submit' value='Entrar' />
                         </Link>
                     </div>
