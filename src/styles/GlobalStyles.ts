@@ -40,6 +40,7 @@ export default createGlobalStyle`
         --secondary-dark: #00e699;
         --submit-ligth: #328ce7;
         --submit-dark: #1359a0;
+        --cancel-color: #cccccc;
         --text-color: #fff;
 
         --input-height: 40px

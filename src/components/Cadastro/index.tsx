@@ -7,6 +7,7 @@ import Renda from "./Renda";
 import Responsavel from "./Responsavel";
 
 import { Container } from "./styles";
+import Submit from "./Submit";
 
 const Register: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Register: React.FC = () => {
       <Dependentes />
       <GrupoFamiliar />
       <Domicilio />
+      <Submit />
     </Container>
   );
 };
