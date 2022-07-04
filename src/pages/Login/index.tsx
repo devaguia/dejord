@@ -7,10 +7,10 @@ import { Container, Logo, Form, SectionInput, UserIcon, PasswordIcon, Box } from
 const Login: React.FC = () => {
     return (
         <Container>
-            <Logo>   
-                <img src={`${process.env.REACT_APP_PUBLIC_URL}/images/logo.png`} alt='logo dejord'></img>
-            </Logo>
             <Box>
+                <Logo>   
+                    <img src={`${process.env.REACT_APP_PUBLIC_URL}/images/logo.png`} alt='logo dejord'></img>
+                </Logo>
                 <Form>
                     <SectionInput>
                         <div>

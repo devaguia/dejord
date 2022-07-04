@@ -12,27 +12,22 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.div`
-  width: 150px;
-  position: relative;
-  bottom: 70px;
-  z-index: 10000;
-
+  max-width: 150px;
+  margin: 50px auto 20px auto;
   img {
     width: 100%;
   }
 `;
 
 export const Box = styled.div`
-  position: absolute;
-  top: 25%;
-  margin-left: auto;
-  margin-right: auto;
-
   background-color: var(--primary);
   border-radius: 10px;
-  min-width: 300px;
-  width: 330px;
-  height: 350px;
+  width: 300px;
+  min-height: 350px;
+
+  @media (min-width: 768px) {
+    width: 330px;
+  }
 `;
 
 export const Form = styled.form`
@@ -44,16 +39,15 @@ export const Form = styled.form`
 `;
 
 export const SectionInput = styled.div`
-  padding-top: 140px;
 
   > div {
     position: relative;
-    padding-left: 40px;
+    padding-left: 25px;
     margin-bottom: 15px;
 
     > svg {
       position: absolute;
-      left: 50px;
+      left: 40px;
       top: 10px;
     }
 
@@ -69,6 +63,17 @@ export const SectionInput = styled.div`
       background-color: var(--primary-dark);
     }
   }
+
+  @media (min-width: 768px) {
+    > div {
+      padding-left: 40px;
+
+      > svg {
+        left: 50px;
+      }
+    }
+  }
+
 `;
 
 const iconsCSS = css`
